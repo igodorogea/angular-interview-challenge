@@ -1,0 +1,64 @@
+.actionBar {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    bottom: 100px;
+    right: 500px;
+    position: absolute;
+    .main-container {
+        .btn-toggle {
+            background: #3f51b5;
+            border-radius: 8px 0px 0px 8px;
+            height: 39px;
+            border: none;
+            .mat-icon {
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.sub-container {
+    display: flex;
+    .container-buttons {
+        .btn-action {
+            margin: 0 10px;
+            border: none;
+            border-radius: 8px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+    .container-more {
+        .btn-more {
+            display: flex;
+            border: none;
+            border-radius: 8px;
+            height: 25px;
+            margin: 7px;
+            cursor: pointer;
+        }
+        .txt-more {
+            padding: 5px;
+        }
+    }
+    .icon-app {
+        margin: 7px;
+        color: white;
+        height: 25px;
+    }
+}
+
+.mat-toolbar {
+    background: none;
+}
+
+.collapse {
+    background-color: #3f51b5;
+}
+
+.expand {
+    height: 38px;
+    background-color: #3f51b5;
+}
