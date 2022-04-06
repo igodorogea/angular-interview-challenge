@@ -33,3 +33,41 @@
     </div>
   </mat-toolbar>
 </div>
+
+<!-- ------------------------------New Action Bar Code--------------------------------------------------- -->
+
+<h2>New Action Bar</h2>
+
+<app-new-action-bar style="display: flex;" cdkDrag>
+  <button type="button" appNewactionBarToggle>
+    <mat-icon>flip</mat-icon>
+  </button>
+
+  <ng-template appNewActionBarContent>
+    <div class="main-div">
+      <div class="first-div">
+        <button class="action-button">Button 1</button>
+        <button class="action-button">Button 2</button>
+        <button class="action-button">Button 3</button>
+      </div>
+
+      <div class="second-div">
+        <button class="more-button" mat-icon-button [matMenuTriggerFor]="newMenu">
+          <div>
+            <mat-icon>more_horiz</mat-icon>
+          </div>
+          <div>More</div>
+        </button>
+      </div>
+    </div>
+
+    <mat-menu #newMenu="matMenu">
+      <button mat-menu-item>Button 4</button>
+      <button mat-menu-item>Button 5</button>
+      <button mat-menu-item>Button 6</button>
+      <button mat-menu-item>Button 7</button>
+    </mat-menu>
+  </ng-template>
+</app-new-action-bar>
+
+<hr />
